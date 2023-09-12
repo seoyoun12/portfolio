@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+/*
+글씨체 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MabinogiClassicR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/MabinogiClassicR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body,html {
+font-family:'NEXON Lv2 Gothic',sans-serif;
+background:#F2F7FF;
+width:100%; height: 100%;
+overflow:hidden; box-sizing: border-box;
+}
+
+
+#header{
+  width:100%; max-width:1200px; height: 15vh;
+  margin: 0 auto; padding: 0 20px; box-sizing:border-box;
+  display: flex; align-items: center; justify-content:space-between;
+  font-family:'MabinogiClassicR',sans-serif;
+}
+
+.logo{
+  background:linear-gradient(to right, #FC354C, #0ABFBC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+font-weight: bold; font-size:50px;
+}
+
+
+#header .gnb{
+  display: flex; gap:20px;
+}
+
+#header .gnb .gnb_btn{
+  font-weight: bold; text-transform:uppercase;
+  font-size:30px;
+}
+
+#header .gnb .gnb_btn::after{
+  content:"";
+  display: block;
+  width:0%; height:3px;
+  background:#000;
+  transition:all 0.3s;
+}
+
+#header .gnb .active::after{
+  width:100%;
+}
+
+
+#main{
+  width:calc(100%-20px); max-width:1200px; 
+  margin: 0 auto; padding:20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius:15px;
+  height:80vh;
+  overflow-y: scroll;
+  scrollbar-width: none; 
+}
+
+#project_main,#about_main{
+  width:100%; height: 100%;
+}
+
+
+#main::-webkit-scrollbar,#about_main::-webkit-scrollbar,#project_main::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width:1200px){
+  #main {
+    margin: 0 20px;
+  }
+}

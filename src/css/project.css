@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+#project_main{
+  display: flex;
+}
+
+#project_main .list{
+  width:18%; 
+  margin-right:2%;
+  padding-right:2%;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  border-right: 1px solid #5CF;
+}
+#project_main .list h4{
+  font-size:26px;
+  font-family:'MabinogiClassicR',sans-serif;
+}
+#project_main .list .subtitle{
+  font-size:16px; font-weight:bold; margin-top:10px;
+  color:#999; margin-bottom:10px;
+}
+
+#project_main .list .pj_title{
+  font-weight:bold; font-size:25px;
+  margin-bottom:10px; 
+}
+
+#project_main .list .active{
+  background:linear-gradient(to right, #FC354C, #0ABFBC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+/* sub page */
+
+#project_main .container{
+  width:80%; box-sizing: border-box;
+  display: flex; 
+}
+
+#project_main .container .box {
+  width:58%; box-sizing: border-box;
+}
+
+#project_main .container .img_box{
+  width:40%; height:100%; 
+  border-radius:15px; border:1px solid #ccc;
+  box-sizing: border-box;
+  overflow-y:scroll;
+}
+
+#project_main .container .img_box img{
+  width:100%;
+}

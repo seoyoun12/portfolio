@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+
+#main{
+  position: relative;
+  display: block;
+}
+#main .text_wrap{
+  width:100%;
+  position: absolute;
+  left:50%; top: 50%; transform:translate(-50%,-50%);
+  text-align: center; text-transform: uppercase; 
+  font-family:'MabinogiClassicR',sans-serif;
+}
+  .text_wrap .change_text{
+    margin-bottom: 20px;
+}
+.text_wrap .change_text ul li{
+  display:none;
+  font-size:50px;
+  font-weight: bold;
+}
+
+.text_wrap .change_text ul li:nth-child(1){
+  display: block; 
+}
+
+.text_wrap h2{
+  font-size: 60px;
+}
+
+.text_wrap h2 span{
+  display: block;
+  font-size:50px;
+  margin-top:20px;
+}
+
+.go_btn{
+  display:block; width:200px; height: 50px;
+  font-size:20px; font-weight: bold;
+  text-align: center; line-height:60px;
+  border-radius:15px; background:#F2F7FF;
+  box-shadow:3px 3px 5px 0px rgba(0,0,0,0.15);
+  position: absolute; right: 30px; bottom: 30px;
+  font-family:'MabinogiClassicR',sans-serif;
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+
+#main .skill_title{
+  font-size:30px;
+  margin:20px 0px 30px;
+  font-family:'Montserrat',sans-serif;
+}
+
+.container {
+  display: flex; flex-flow:wrap row;
+  gap:10px;
+}
+
+.container .content_box{
+  border: 1px solid #BFD7FD;
+  border-radius:15px;
+  width:380px; height: 120px;
+  padding:12px 12px 12px 120px; box-sizing: border-box;
+  background:url('../img/skill/html-96.png') no-repeat 20px center;
+  background-size:80px 80px;
+}
+
+.container .content_box .title{
+  font-weight: bold; font-size:28px;
+  margin-bottom:10px;
+}
+.container .content_box p{
+  line-height:23px;
+  font-size:16px;
+}
+
+.container .html{
+  background-image:url('../img/skill/html-96.png');
+}
+
+.container .css{
+  background-image:url('../img/skill/css-96.png');
+}
+
+.container .js{
+  background-image:url('../img/skill/javascript-96.png');
+}
+
+.container .bootstrap{
+  background-image:url('../img/skill/bootstrap-96.png');
+}
+
+.container .react{
+  background-image:url('../img/skill/react-96.png');
+}
+
+.container .jquery{
+  background-image:url('../img/skill/jquery-96.png');
+  background-size:60px; 
+  background-position:30px;
+}
+
+.container .figma{
+  background-image:url('../img/skill/figma-96.png');
+}
+
+.container .photoshop{
+  background-image:url('../img/skill/photoshop-96.png');
+}
+
+.container .illustrator{
+  background-image:url('../img/skill/illustrator-96.png');
+}
+
