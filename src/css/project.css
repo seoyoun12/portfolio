@@ -45,6 +45,19 @@
   width:58%; box-sizing: border-box;
 }
 
+#project_main .box .pje_name{
+  font-family:'MabinogiClassicR',sans-serif;
+  font-size:40px; font-weight: bold;
+}
+
+#project_main .box .title{
+  margin:10px 0;
+}
+
+#project_main .box .pje_text{
+  line-height:1.3em;
+}
+
 #project_main .container .img_box{
   width:40%; height:100%; 
   border-radius:15px; border:1px solid #ccc;
