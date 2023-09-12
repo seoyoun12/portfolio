@@ -10,13 +10,14 @@
 
 .container {
   display: flex; flex-flow:wrap row;
-  gap:10px;
+  gap:20px;
+  justify-content:space-evenly;
 }
 
 .container .content_box{
   border: 1px solid #BFD7FD;
   border-radius:15px;
-  width:380px; height: 120px;
+  width:350px; 
   padding:12px 12px 12px 120px; box-sizing: border-box;
   background:url('../img/skill/html-96.png') no-repeat 20px center;
   background-size:80px 80px;
@@ -24,11 +25,12 @@
 
 .container .content_box .title{
   font-weight: bold; font-size:28px;
-  margin-bottom:10px;
+  margin:10px 0;
 }
 .container .content_box p{
   line-height:23px;
   font-size:16px;
+  margin-bottom:10px;
 }
 
 .container .html{
@@ -69,3 +71,21 @@
   background-image:url('../img/skill/illustrator-96.png');
 }
 
+
+@media screen and (max-width:1150px){
+  .container{
+    gap: 10px;
+  }
+  .container .content_box{
+    width:380px;
+  }
+  
+}
+
+@media screen and (max-width:850px){
+
+  .container .content_box{
+    width:100%;
+  }
+  
+}

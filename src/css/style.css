@@ -83,12 +83,70 @@ font-weight: bold; font-size:50px;
   width:100%; height: 100%;
 }
 
+.pointer{
+  width:30px; height: 30px;
+  border-radius:50%;
+  background:#fff;
+  position: absolute;
+  left: 3px; top: 3px;
+  z-index:99999;
+  mix-blend-mode: difference;
+}
 
-#main::-webkit-scrollbar,#about_main::-webkit-scrollbar,#project_main::-webkit-scrollbar{
+
+#main::-webkit-scrollbar,#about_main::-webkit-scrollbar,#project_main::-webkit-scrollbar,.img_box::-webkit-scrollbar,.list::-webkit-scrollbar{
   display: none;
 }
-@media screen and (max-width:1200px){
-  #main {
-    margin: 0 20px;
+
+.menu_btn{
+  font-size:24px;
+  font-weight: bold;
+  display: none;
+}
+
+@media screen and (max-width:900px){
+  #main{
+    margin:0 20px;
+  }
+
+  .logo{
+    font-size:40px;
+  }
+
+  #header .gnb .gnb_btn{
+    font-size:24px;
+  }
+}
+
+@media screen and (max-width:600px){
+
+  .pointer{
+    display: none;
+  }
+
+  .menu_btn{
+    display: block;
+    cursor: pointer;
+  }
+
+  #header .gnb .gnb_btn{
+    display: block;
+    font-size:50px;
+    margin-bottom:10px;
+  }
+  
+  #header .gnb{
+    display: none;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform:translate(-50%,-50%);
+
+  }
+
+  #header .visible{
+    display: block;
+  }
+  .visible{
+    display: none;
   }
 }

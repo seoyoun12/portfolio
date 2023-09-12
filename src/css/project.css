@@ -12,6 +12,7 @@
   flex-flow: column;
   box-sizing: border-box;
   border-right: 1px solid #5CF;
+  overflow-y:scroll;
 }
 #project_main .list h4{
   font-size:26px;
@@ -25,6 +26,7 @@
 #project_main .list .pj_title{
   font-weight:bold; font-size:25px;
   margin-bottom:10px; 
+  display: block;
 }
 
 #project_main .list .active{
@@ -34,24 +36,157 @@
   color: transparent;
 }
 
+#project_main .sub_box{
+  width:80%;
+}
+
 /* sub page */
 
-#project_main .container{
-  width:80%; box-sizing: border-box;
+#project_main .pj_container{
+  width:100%; height: 100%; box-sizing: border-box;
   display: flex; 
+  
 }
 
-#project_main .container .box {
+#project_main .sub_box .pj_container .box {
   width:58%; box-sizing: border-box;
+  position: relative;
 }
 
-#project_main .container .img_box{
+#project_main .box .pje_name{
+  font-family:'MabinogiClassicR',sans-serif;
+  font-size:40px; font-weight: bold;
+}
+
+#project_main .box .title{
+  margin:20px 0; font-size:22px;
+  
+}
+
+#project_main .box .pje_text{
+  line-height:1.6em; 
+  font-size:19px;
+  margin:10px 10px 10px 0;
+
+}
+
+.box .skills{
+  margin-bottom:30px;
+}
+
+.box .skills p{
+  display: block; font-weight: bold;
+  background:url('../img/icon/hash.png') no-repeat left center;
+  background-size: contain;
+  padding-left:20px;
+  margin-bottom:5px;
+}
+
+.box .ch_box p{
+  display: block; font-weight: bold;
+  background:url('../img/icon/harts.png') no-repeat left center;
+  background-size: contain;
+  padding-left:20px;
+  margin-bottom:5px;
+}
+
+.box .btns{
+  position: absolute;
+  right: 10px; bottom: 0;
+  
+}
+
+.box .btns .btn{
+  width: 50px; height: 50px;
+  background-size: contain;
+  border-radius:50%;
+  border:1px solid #999;
+  text-indent:-9999em;
+}
+
+.box .btns .figma{
+  background:url("../img/skill/figma-48.png") no-repeat center center;
+  background-size: 40px;
+}
+
+
+#project_main .sub_box .pj_container .img_box{
   width:40%; height:100%; 
   border-radius:15px; border:1px solid #ccc;
   box-sizing: border-box;
   overflow-y:scroll;
 }
 
-#project_main .container .img_box img{
+#project_main .sub_box .pj_container .img_box img{
   width:100%;
+}
+
+.list_btn{
+  font-weight: bold;
+  position: absolute;
+  right: 10px; top: 10px;
+  border-radius:50%;
+  width:50px; height: 50px;
+  font-weight:20px;
+  background: #ccc;
+  text-align: center; line-height:50px;
+  cursor: pointer; z-index:9999999;
+  display: none;
+}
+
+@media screen and (max-width:900px){
+  #project_main .list .pj_title{
+    font-size:20px;
+  }
+}
+
+
+@media screen and (max-width:700px){
+  #project_main {
+    display: block;
+  }
+  #project_main .list{
+    display: none;
+    width:100%;
+    border:none;
+  }
+  #project_main .list .pj_title{
+    font-size:26px;
+  }
+
+  #project_main .sub_box{
+    width:100%;
+  }
+
+  #project_main .sub_box .pj_container{
+    display: block;
+    width: 100%;
+  }
+  #project_main .sub_box .pj_container .box{
+    width: 100%;
+  }
+  .box .btns{
+    margin: 20px 0;
+    top: -30px; right:50px;
+  }
+
+  #project_main .sub_box .pj_container .img_box{
+    width:100%;
+  }
+  .list_btn{
+    display: block;
+  }
+
+  #project_main .list_visible {
+    display: block;
+  }
+
+
+  #project_main .hidden {
+    display: none;
+  }
+
+  #project_main .visible {
+    display: none;
+  }
 }

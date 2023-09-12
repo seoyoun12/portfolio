@@ -1,8 +1,9 @@
 import React from "react";
-import '../css/main.css'
+import "../css/main.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function Main(){
-  return(
+function Main() {
+  return (
     <>
       <main id="main">
         <div className="text_wrap">
@@ -15,15 +16,19 @@ function Main(){
             </ul>
           </div>
           <h2>
-            FRONT-END<br />
-            DEVELOPER<br />
+            FRONT-END
+            <br />
+            DEVELOPER
+            <br />
             <span>portfolio</span>
           </h2>
         </div>
-        <a href="./page/skill.html" className="go_btn">GO PROJECT</a>
+        <Link to="/project" className="go_btn">
+          GO PROJECT
+        </Link>
       </main>
     </>
-  )
+  );
 }
 
 export default Main;
