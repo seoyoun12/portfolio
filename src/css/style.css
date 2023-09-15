@@ -104,11 +104,15 @@ font-weight: bold; font-size:50px;
   display: none;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1200px){
   #main{
     margin:0 20px;
   }
 
+}
+
+
+@media screen and (max-width:900px){
   .logo{
     font-size:40px;
   }

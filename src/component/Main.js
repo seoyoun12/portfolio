@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/main.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Main() {
+  const texts = ["Passionate", "Challenging", "Hardworking", "Dreaming"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <main id="main">
         <div className="text_wrap">
           <div className="change_text">
             <ul>
-              <li>Passionate</li>
-              <li>Challenging</li>
-              <li>Hardworking</li>
-              <li>dreaming</li>
+              {texts.map((text, index) => (
+                <li
+                  key={index}
+                  style={{ display: index === currentIndex ? "block" : "none" }}
+                >
+                  {text}
+                </li>
+              ))}
             </ul>
           </div>
           <h2>

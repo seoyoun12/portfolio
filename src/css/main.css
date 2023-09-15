@@ -13,17 +13,24 @@
   text-align: center; text-transform: uppercase; 
   font-family:'MabinogiClassicR',sans-serif;
 }
-  .text_wrap .change_text{
-    margin-bottom: 20px;
+.text_wrap .change_text{
+  margin-bottom: 20px;
+  height: 55px;
 }
+
 .text_wrap .change_text ul li{
-  display:none;
   font-size:50px;
   font-weight: bold;
 }
 
-.text_wrap .change_text ul li:nth-child(1){
-  display: block; 
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .text_wrap h2{

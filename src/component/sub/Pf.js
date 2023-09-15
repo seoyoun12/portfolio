@@ -29,6 +29,14 @@ function Pf() {
           </div>
           <div className="btns">
             <div className="btn figma">figmas</div>
+            <button
+              onClick={() => {
+                window.open("https://github.com/seoyoun12/portfolio");
+              }}
+              className="btn github"
+            >
+              github
+            </button>
           </div>
         </div>
         <div className="img_box">

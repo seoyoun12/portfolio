@@ -8,11 +8,11 @@ import {
 } from "react-router-dom";
 import Pf from "./sub/Pf.js";
 import Pepoyes from "./sub/Pepoyes";
+import Mbti from "./sub/Mbti";
 
 function Project() {
   const [hidden, setHidden] = useState(false);
-
-  function btn_click() {
+  function btn_click(e) {
     setHidden((prevHidden) => !prevHidden);
   }
 
@@ -33,11 +33,15 @@ function Project() {
               파파이스 리뉴얼
             </NavLink>
             <p className="subtitle">미니 프로젝트</p>
+            <NavLink to="mbti" className="pj_title" onClick={btn_click}>
+              MBTI 심리테스트
+            </NavLink>
           </div>
           <div className={`sub_box ${hidden ? "visible" : ""}`}>
             <Routes path="project">
               <Route path="/" element={<Pf />} />
               <Route path="Popeyes" element={<Pepoyes />} />
+              <Route path="mbti" element={<Mbti />} />
             </Routes>
           </div>
         </div>
