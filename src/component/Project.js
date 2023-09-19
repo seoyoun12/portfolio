@@ -9,10 +9,11 @@ import {
 import Pf from "./sub/Pf.js";
 import Pepoyes from "./sub/Pepoyes";
 import Mbti from "./sub/Mbti";
+import Nintendo from "./sub/Nintendo";
 
 function Project() {
   const [hidden, setHidden] = useState(false);
-  function btn_click(e) {
+  function btn_click() {
     setHidden((prevHidden) => !prevHidden);
   }
 
@@ -25,14 +26,17 @@ function Project() {
           </button>
           <div className={`list ${hidden ? "list_visible" : ""}`}>
             <h4>LIST</h4>
-            <p className="subtitle">홈페이지</p>
+            <p className="subtitle">Homepage</p>
             <NavLink to="/project/" className="pj_title" onClick={btn_click}>
               포트폴리오
             </NavLink>
             <NavLink to="Popeyes" className="pj_title" onClick={btn_click}>
-              파파이스 리뉴얼
+              파파이스 메인 리뉴얼
             </NavLink>
-            <p className="subtitle">미니 프로젝트</p>
+            <NavLink to="Nintendo" className="pj_title" onClick={btn_click}>
+              닌텐도 메인 리뉴얼
+            </NavLink>
+            <p className="subtitle">work</p>
             <NavLink to="mbti" className="pj_title" onClick={btn_click}>
               MBTI 심리테스트
             </NavLink>
@@ -41,6 +45,7 @@ function Project() {
             <Routes path="project">
               <Route path="/" element={<Pf />} />
               <Route path="Popeyes" element={<Pepoyes />} />
+              <Route path="Nintendo" element={<Nintendo />} />
               <Route path="mbti" element={<Mbti />} />
             </Routes>
           </div>

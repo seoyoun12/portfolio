@@ -7,6 +7,13 @@ function Pf() {
       <div className="pj_container">
         <div className="box">
           <p className="pje_name">포트폴리오</p>
+          <h4 className="title">Skills</h4>
+          <div className="skills">
+            <p>React</p>
+            <p>Javascript</p>
+            <p>CSS</p>
+            <p>Figma</p>
+          </div>
           <h4 className="title">Overview</h4>
           <p className="pje_text">
             피그마로 디자인하고, React를 이용해 제작한 반응형 개인 포트폴리오
@@ -20,13 +27,7 @@ function Pf() {
             <br />
             계속 업데이트할 예정입니다.
           </p>
-          <h4 className="title">Skills</h4>
-          <div className="skills">
-            <p>React</p>
-            <p>Javascript</p>
-            <p>CSS</p>
-            <p>Figma</p>
-          </div>
+
           <div className="btns">
             <div className="btn figma">figmas</div>
             <button

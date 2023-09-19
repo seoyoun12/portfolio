@@ -27,6 +27,7 @@ font-family:'NEXON Lv2 Gothic',sans-serif;
 background:#F2F7FF;
 width:100%; height: 100%;
 overflow:hidden; box-sizing: border-box;
+cursor: default;
 }
 
 

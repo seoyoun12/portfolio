@@ -22,6 +22,32 @@
   font-size:50px;
   font-weight: bold;
 }
+.text_wrap .change_text ul li:nth-child(1){
+  background:linear-gradient(to right, #FC466B, #3F5EFB);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.text_wrap .change_text ul li:nth-child(2){
+  background:linear-gradient(to right, #36D1DC, #5B86E5);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.text_wrap .change_text ul li:nth-child(3){
+  background:linear-gradient(to right, #4AC29A, #BDFFF3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.text_wrap .change_text ul li:nth-child(4){
+  background:linear-gradient(to right, #FF4E50, #F9D423);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 
 
 @keyframes slide-up {

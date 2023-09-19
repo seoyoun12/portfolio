@@ -44,13 +44,13 @@
 
 #project_main .pj_container{
   width:100%; height: 100%; box-sizing: border-box;
-  display: flex; 
+  display: flex;  position: relative;
   
 }
 
 #project_main .sub_box .pj_container .box {
   width:58%; box-sizing: border-box;
-  position: relative;
+  
 }
 
 #project_main .box .pje_name{
@@ -92,7 +92,7 @@
 
 .box .btns{
   position: absolute;
-  right: 10px; bottom: 0;
+  right: 20px; bottom: 10px;
   display: flex; gap:10px;
 }
 
@@ -106,7 +106,8 @@
 }
 
 .box .btns .figma{
-  background:url("../img/skill/figma-48.png") no-repeat center center;
+
+  background:url("../img/skill/figma-48.png") no-repeat center center #fff;
   background-size: 40px;
 }
 
@@ -123,7 +124,7 @@
 }
 
 #project_main .box .pje_text{
-  line-height:1.3em;
+  line-height:1.5em;
 }
 
 #project_main .sub_box .pj_container .img_box img{
@@ -144,9 +145,12 @@
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
   #project_main .list .pj_title{
-    font-size:20px;
+    font-size:22px;
+  }
+  #project_main .box .pje_name{
+    font-size:36px;
   }
 }
 
