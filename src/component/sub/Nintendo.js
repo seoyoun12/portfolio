@@ -41,6 +41,22 @@ function Nintendo() {
             >
               figma
             </button>
+            <button
+              onClick={() => {
+                window.open("https://github.com/seoyoun12/mario_redesign");
+              }}
+              className="btn github"
+            >
+              github
+            </button>
+            <button
+              onClick={() => {
+                window.open("https://seoyoun12.github.io/mario_redesign/");
+              }}
+              className="btn link"
+            >
+              LINK
+            </button>
           </div>
         </div>
         <div className="img_box">

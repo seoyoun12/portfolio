@@ -10,6 +10,7 @@ import Pf from "./sub/Pf.js";
 import Pepoyes from "./sub/Pepoyes";
 import Mbti from "./sub/Mbti";
 import Nintendo from "./sub/Nintendo";
+import Tetris from "./sub/Tetris";
 
 function Project() {
   const [hidden, setHidden] = useState(false);
@@ -40,6 +41,9 @@ function Project() {
             <NavLink to="mbti" className="pj_title" onClick={btn_click}>
               MBTI 심리테스트
             </NavLink>
+            <NavLink to="tetris" className="pj_title" onClick={btn_click}>
+              테트리스 게임
+            </NavLink>
           </div>
           <div className={`sub_box ${hidden ? "visible" : ""}`}>
             <Routes path="project">
@@ -47,6 +51,7 @@ function Project() {
               <Route path="Popeyes" element={<Pepoyes />} />
               <Route path="Nintendo" element={<Nintendo />} />
               <Route path="mbti" element={<Mbti />} />
+              <Route path="tetris" element={<Tetris />} />
             </Routes>
           </div>
         </div>

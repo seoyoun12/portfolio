@@ -101,19 +101,34 @@
   background-size: contain;
   border-radius:50%;
   border:1px solid #999;
-  text-indent:-9999em;
   cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color:#fff;
+  font-size:16px;
+}
+
+.box .btns .btn:hover{
+  background: #000;
+  border:1px solid #000;
+  text-indent: 0;
+}
+.box .btns .link{
+  background:#FC354C;
+  border:1px solid #FC354C;
 }
 
 .box .btns .figma{
 
   background:url("../img/skill/figma-48.png") no-repeat center center #fff;
   background-size: 40px;
+  text-indent:-9999em;
 }
 
 .box .btns .github{
-  background:url("../img/icon/github.png") no-repeat center center;
+  background:url("../img/icon/github.png") no-repeat center center #fff;
   background-size: contain;
+  text-indent:-9999em;
 }
 
 #project_main .sub_box .pj_container .img_box{
@@ -121,6 +136,9 @@
   border-radius:15px; border:1px solid #ccc;
   box-sizing: border-box;
   overflow-y:scroll;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #project_main .box .pje_text{
@@ -129,6 +147,7 @@
 
 #project_main .sub_box .pj_container .img_box img{
   width:100%;
+  
 }
 
 .list_btn{
@@ -150,7 +169,7 @@
     font-size:22px;
   }
   #project_main .box .pje_name{
-    font-size:36px;
+    font-size:36px; padding-right:30px;
   }
 }
 
@@ -181,7 +200,7 @@
   }
   .box .btns{
     margin: 20px 0;
-    top: -30px; right:50px;
+    top: 30px; right:-10px;
   }
 
   #project_main .sub_box .pj_container .img_box{

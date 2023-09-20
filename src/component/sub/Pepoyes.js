@@ -38,6 +38,22 @@ function Pepoyes() {
             >
               figma
             </button>
+            <button
+              onClick={() => {
+                window.open("https://github.com/seoyoun12/popeyes");
+              }}
+              className="btn github"
+            >
+              github
+            </button>
+            <button
+              onClick={() => {
+                window.open("https://seoyoun12.github.io/popeyes/");
+              }}
+              className="btn link"
+            >
+              LINK
+            </button>
           </div>
         </div>
         <div className="img_box">

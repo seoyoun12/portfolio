@@ -36,6 +36,14 @@ function Mbti() {
             >
               github
             </button>
+            <button
+              onClick={() => {
+                window.open("https://seoyoun12.github.io/mbti_test/");
+              }}
+              className="btn link"
+            >
+              LINK
+            </button>
           </div>
         </div>
         <div className="img_box">

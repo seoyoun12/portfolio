@@ -63,6 +63,9 @@ font-weight: bold; font-size:50px;
   background:#000;
   transition:all 0.3s;
 }
+#header .gnb .gnb_btn:hover::after{
+  width:100%;
+}
 
 #header .gnb .active::after{
   width:100%;
@@ -70,7 +73,7 @@ font-weight: bold; font-size:50px;
 
 
 #main{
-  width:calc(100%-20px); max-width:1200px; 
+  width:calc(100%-40px); max-width:1200px; 
   margin: 0 auto; padding:20px;
   box-sizing: border-box;
   background: #fff;
