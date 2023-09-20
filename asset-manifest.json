@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/seoyoun12/seoyoun.github.io/static/css/main.376f69d1.css",
+    "main.js": "/seoyoun12/seoyoun.github.io/static/js/main.aa7198dd.js",
+    "static/js/787.1ed0c42c.chunk.js": "/seoyoun12/seoyoun.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nintendo.png": "/seoyoun12/seoyoun.github.io/static/media/nintendo.0e76ffe3cc9dba2ebe7b.png",
+    "static/media/popeyes.png": "/seoyoun12/seoyoun.github.io/static/media/popeyes.a9f363f01e90eeaf249e.png",
+    "static/media/pf.png": "/seoyoun12/seoyoun.github.io/static/media/pf.04801968a16bdc0712f2.png",
+    "static/media/mbti.png": "/seoyoun12/seoyoun.github.io/static/media/mbti.3f40d2678af4a9d09bbf.png",
+    "index.html": "/seoyoun12/seoyoun.github.io/index.html",
+    "main.376f69d1.css.map": "/seoyoun12/seoyoun.github.io/static/css/main.376f69d1.css.map",
+    "main.aa7198dd.js.map": "/seoyoun12/seoyoun.github.io/static/js/main.aa7198dd.js.map",
+    "787.1ed0c42c.chunk.js.map": "/seoyoun12/seoyoun.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.376f69d1.css",
+    "static/js/main.aa7198dd.js"
+  ]
+}
