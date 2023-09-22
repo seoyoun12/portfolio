@@ -11,6 +11,7 @@ import Pepoyes from "./sub/Pepoyes";
 import Mbti from "./sub/Mbti";
 import Nintendo from "./sub/Nintendo";
 import Tetris from "./sub/Tetris";
+import Book from "./sub/Book";
 
 function Project() {
   const [hidden, setHidden] = useState(false);
@@ -38,6 +39,9 @@ function Project() {
               닌텐도 메인 리뉴얼
             </NavLink>
             <p className="subtitle">work</p>
+            <NavLink to="book" className="pj_title" onClick={btn_click}>
+              도서 검색 사이트
+            </NavLink>
             <NavLink to="mbti" className="pj_title" onClick={btn_click}>
               MBTI 심리테스트
             </NavLink>
@@ -52,6 +56,7 @@ function Project() {
               <Route path="Nintendo" element={<Nintendo />} />
               <Route path="mbti" element={<Mbti />} />
               <Route path="tetris" element={<Tetris />} />
+              <Route path="book" element={<Book />} />
             </Routes>
           </div>
         </div>

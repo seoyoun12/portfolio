@@ -1,35 +1,36 @@
 import React from "react";
-import img from "./../../img/project/tetris.jpg";
+import img from "./../../img/project/book.png";
 
-function Tetris() {
+function Book() {
   return (
     <>
       <div className="pj_container">
         <div className="box">
-          <p className="pje_name">테트리스 게임</p>
+          <p className="pje_name">도서 검색 페이지</p>
           <h4 className="title">Skills</h4>
           <div className="skills">
             <p>HTML</p>
             <p>Javascript</p>
+            <p>JQuery</p>
             <p>CSS</p>
+            <p>KAKAO API</p>
           </div>
           <h4 className="title">Overview</h4>
           <p className="pje_text">
-            어릴적부터 좋아하던 테트리스 게임을 만들어보았습니다.
+            KAKAO API를 이용해 도서검색 페이지를 만들어보았습니다.
             <br />
-            유튜브 강의를 보고 제작하였으나, 게임 시작부분이나 스코어 부분이
-            부족하다고 생각되어 추가하게되었습니다.
+            디자인부터 모두 스스로 생각하고 개발하였습니다.
+            <br />
+            API를 다룬것이 처음이라 데이터의 구조를 확인하고 불러오는 것에대해
+            미흡한점이 많지만, 새로운것을 배우게 되어 몹시 재미있게
+            해결해나갔던것같습니다.
+            <br />
+            추후에 다른 API들도 확인해보고 다른 앱도 개발하고싶습니다.
           </p>
-          <h4 className="title">Skills</h4>
-          <div className="skills">
-            <p>HTML</p>
-            <p>Javascript</p>
-            <p>CSS</p>
-          </div>
           <div className="btns">
             <button
               onClick={() => {
-                window.open("https://github.com/seoyoun12/tetris_game");
+                window.open("https://github.com/seoyoun12/book_search");
               }}
               className="btn github"
             >
@@ -37,7 +38,7 @@ function Tetris() {
             </button>
             <button
               onClick={() => {
-                window.open("https://seoyoun12.github.io/tetris_game/");
+                window.open("https://seoyoun12.github.io/book_search/");
               }}
               className="btn link"
             >
@@ -53,4 +54,4 @@ function Tetris() {
   );
 }
 
-export default Tetris;
+export default Book;
